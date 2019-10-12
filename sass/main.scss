@@ -1,5 +1,9 @@
+@import "normalize.scss";
+@import "variables.scss";
+
 .red {
     background-color: red;
     width: 100px;
     height: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
 }

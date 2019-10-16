@@ -51,6 +51,19 @@
 
     background-color: $light-grey;
     border-radius: 12px 0px 12px 12px;
+
+    &--w-out-img {
+      display: block;
+      box-sizing: border-box;
+      background-color: $dirty-yellow;
+      padding: 14px 80px 14px 16px;
+    }
+
+    & > .news-card__title--img-fallback {
+      margin: 0;
+      @include set-font (26px, $font-bold, $white);
+      line-height: 28px;
+    } 
   }
 
   &__publish-date {

@@ -225,13 +225,26 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.btn {
+  text-align: center;
+  white-space: nowrap;
+  background-color: #3e99ed;
+  border-radius: 24px;
+  border: none; }
+  .btn:hover, .btn:focus {
+    background-color: #1b82e0; }
+  .btn:active {
+    background-color: #fff;
+    color: #3e99ed;
+    border: 1px solid #3e99ed; }
+
 .news {
   min-width: 288px;
   margin: 340px auto 113px;
   padding-left: 16px;
   padding-right: 16px; }
   .news__list {
-    margin: 0;
+    margin: 0 0 62px 0;
     padding: 0;
     list-style-type: none; }
     .news__list > * + * {
@@ -243,11 +256,21 @@ input[type="radio"].visually-hidden {
        -moz-appearance: none;
             appearance: none; }
     .news__item-link:hover, .news__item-link:focus {
-      -webkit-box-shadow: 1px 1px #898b8c, -1px -1px #898b8c, 0 -1px #898b8c;
-              box-shadow: 1px 1px #898b8c, -1px -1px #898b8c, 0 -1px #898b8c;
+      -webkit-box-shadow: 1px 1px #eae9d6, -1px -1px #eae9d6, 0 -1px #eae9d6, 0 1px #eae9d6;
+              box-shadow: 1px 1px #eae9d6, -1px -1px #eae9d6, 0 -1px #eae9d6, 0 1px #eae9d6;
       border-radius: 4px 4px 0px 4px; }
     .news__item-link:active {
       background-color: #eae9d6; }
+  .news__show-more-btn {
+    display: block;
+    width: 100%;
+    max-width: 288px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff; }
 
 .news-card__header {
   display: -webkit-box;
@@ -311,6 +334,18 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
   background-color: #eae9d6;
   border-radius: 12px 0px 12px 12px; }
+  .news-card__picture--w-out-img {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #ccc8a2;
+    padding: 14px 80px 14px 16px; }
+  .news-card__picture > .news-card__title--img-fallback {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 28px; }
 
 .news-card__publish-date {
   position: absolute;

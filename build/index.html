@@ -18,14 +18,21 @@
           <li class="news__item news-card--special news-card">
             <a class="news__item-link" href="#">
               <div class="news-card__header">
-                <img class="news-card__autor-img" src="" alt="Аватарка автора">
+                <img class="news-card__autor-img" src="img/avatar_1@1x.jpg" srcset="img/avatar_1@2x.jpg 2x" alt="Аватарка автора">
                 <p class="news-card__autor-name">JewelJul</p>
                 <p class="news-card__special-news">Выбор редакции</p>
               </div>
 
               <div class="news-card__picture">
-                <img class="news-card__img" src="" alt="Pioner Talks: Разложение лирического героя. Случай Елизарова">
-                
+                  <picture class="photo-item__img-source">
+                    <source media="(min-width: 1150px)" 
+                      srcset="img/news-img-1__desktop@1x.jpg, 
+                      img/news-img-1__desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" 
+                    srcset="img/news-img-1__tablet@1x.jpg,
+                    img/news-img-1__tablet@2x.jpg 2x">
+                    <img class="news-card__img" src="img/news-img-1__mob@1x.jpg" srcset="img/news-img-1__mob@2x.jpg 2x" alt="Pioner Talks: Разложение лирического героя. Случай Елизарова">
+                  </picture>
                 <div class="news-card__publish-date">
                   <p class="news-card__publish-day">24</p>
                   <p class="news-card__publish-month">мая</p>

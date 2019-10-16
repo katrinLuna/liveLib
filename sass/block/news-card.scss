@@ -4,10 +4,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 8px;
   }
 
   &__autor-img {
     display: block;
+    width: 28px;
+    height: 28px;
     margin-right: 8px;
     margin-left: 8px;
     border-radius: 50%;
@@ -16,16 +19,21 @@
 
   &__autor-name {
     margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     @include set-font (14px, $font-bold, $black);
     line-height: 16px;
   }
 
   &__special-news {
     margin-right: 11px;
+    margin-top: 0;
+    margin-bottom: 0;
     width: 100px;
     height: 18px;
     @include set-font (10px, $font-bold, $white);
     line-height: 18px;
+    letter-spacing: 2%;
     text-transform: uppercase;
     text-align: center;
     background-color: $accent-color;
@@ -39,6 +47,7 @@
     align-items: center;
     width: 100%;
     height: 184px;
+    overflow: hidden;
 
     background-color: $light-grey;
     border-radius: 12px 0px 12px 12px;
@@ -49,6 +58,9 @@
     z-index: 10;
     top: 12px;
     right: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 62px;
     height: 68px;
     background-color: rgba(#3E3F40, 0.7);
@@ -58,12 +70,49 @@
     font-weight: 600;
     text-align: center;
 
-    & > p {
-      margin: 0;
+    & > span:first-child {
+      font-size: 26px;
+      line-height: 20px;
     }
 
-    & > p + p {
-      margin-top: 10px;
+    & > span:not(:first-child) {
+      font-size: 12px;
+      line-height: 12px;
     }
+
+    & > * + * {
+      margin-top: 5px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 6px;
+    padding: 0 8px;
+  }
+
+  &__city {
+    margin: 0;
+    padding-right: 8px;
+    @include set-font (14px, $font-bold, $accent-color);
+    line-height: 16px;
+  }
+
+  &__subject {
+    margin: 0;
+    padding-left: 8px;
+    @include set-font (14px, $font-normal, $grey);
+    line-height: 16px;
+  }
+
+  &__title {
+    flex-grow: 1;
+    width: 100%;
+    margin: 4px 0 0 0;
+    @include set-font (18px, $font-bold, $black);
+    line-height: 24px;
   }
 }

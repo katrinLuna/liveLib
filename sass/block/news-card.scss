@@ -183,6 +183,11 @@
     &__img {
       max-width: 364px;
       width: 364px;
+
+      &--book-cover {
+        width: 129px;
+        max-width: 129px;
+      }
     }
   }
 }

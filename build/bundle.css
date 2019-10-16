@@ -482,5 +482,8 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1150px) {
   .news-card__img {
     max-width: 364px;
-    width: 364px; } }
+    width: 364px; }
+    .news-card__img--book-cover {
+      width: 129px;
+      max-width: 129px; } }
 

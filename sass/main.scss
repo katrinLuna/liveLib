@@ -1,9 +1,11 @@
+@import "font.scss";
 @import "normalize.scss";
 @import "variables.scss";
+@import "mixins.scss";
 
-.red {
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
+@import "common.scss";
+
+@import "news.scss";
+@import "news-card.scss";
+
+

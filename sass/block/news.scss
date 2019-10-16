@@ -59,8 +59,12 @@
       grid-column-gap: 20px;
       grid-row-gap: 8px;
       justify-content: start;
-      align-items: start;
+      align-items: stretch;
       margin-bottom: 70px;
+    }
+
+    &__item-link {     
+      min-height: 100%;
     }
 
     &__item {

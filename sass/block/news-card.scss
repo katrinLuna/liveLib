@@ -178,4 +178,11 @@
       font-size: 20px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &__img {
+      max-width: 364px;
+      width: 364px;
+    }
+  }
 }

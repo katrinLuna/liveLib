@@ -42,4 +42,25 @@
     margin-right: auto;
     @include set-font (16px, $font-bold, $white);
   }
+
+  @media (min-width: $tablet-width) {
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-column-gap: 20px;
+      grid-row-gap: 8px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    &__item {
+      margin-top: 0;
+
+      &--special {
+        grid-row: 1 / 3;
+      }
+    }
+  }
 }
